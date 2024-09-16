@@ -9,4 +9,4 @@ check_cw_agent() {
 }
 
 # Initial run to fetch CloudWatch Agent configuration
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c ssm:${SSM_PARAMETER_FILE}
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c ssm:${SSM_PARAMETER_FILE} -s
